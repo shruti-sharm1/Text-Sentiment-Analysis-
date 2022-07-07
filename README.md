@@ -10,12 +10,12 @@ Given the availability of a large volume of online data, sentiment analysis beco
 In this project, a sentiment classifier is built which evaluates the sentiment of a piece of text being either positive negative or neutral.
 
 # Getting the Dataset
-The "Text Emotion" shall be used for this project.The 40,000 tweets are divided evenly into the training, validation and test set.
+The "SentimentAnalysis.txt" shall be used for this project.The tweets are divided into the training, validation and test set.
 
 # Data Preprocessing
-The csv file has three columns,"tweet_id", “content”, "author" and “sentiment”.
+The csv file has six columns,"target", “ids”, "date", “flag”, "user" and "text".
 
-The column “content” contains tweets and the column “sentiment” consists of sentiment labels, 1 for positive , -1 for negative and 0 for neutral. 
+The column “text” contains tweets and the column “target” consists of sentiment labels, 4 for positive , 0 for negative . 
 
 Cleaning the tweets involves:
 
@@ -28,12 +28,6 @@ Cleaning the tweets involves:
     7. Tokenizing the data
     8. Stemming the data
 
-# Algorithmic Overview
-Functions used in the preprocessing_data.ipynb file:
-
-    1. get_subject_phrase : Function to find the subject of all the tweets in the dataset 
-    2. get_object_phrase  : Function to find the object of all the tweets in the dataset 
-    3. pre_processing     : Function to pre-process each tweet
 # Environment
 Language : Python
 
